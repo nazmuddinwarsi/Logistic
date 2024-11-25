@@ -1,0 +1,858 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmInvoice
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.grdTax = New System.Windows.Forms.DataGridView()
+        Me.lblCaption = New System.Windows.Forms.Label()
+        Me.lblHeaderID = New System.Windows.Forms.Label()
+        Me.txtTotalPackage = New System.Windows.Forms.TextBox()
+        Me.txtTotalAmount = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.txtRate = New System.Windows.Forms.TextBox()
+        Me.lblHR2 = New System.Windows.Forms.Label()
+        Me.Grid = New System.Windows.Forms.DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProductName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Packages = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Weight = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Rate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnDel = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.txtAmount = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtPackage = New System.Windows.Forms.TextBox()
+        Me.cmbProduct = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtDate = New System.Windows.Forms.DateTimePicker()
+        Me.txtInvoiceNo = New System.Windows.Forms.TextBox()
+        Me.lblID = New System.Windows.Forms.Label()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.StripPanel = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtWeight = New System.Windows.Forms.TextBox()
+        Me.txtTotalWeight = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cmbConsigner = New System.Windows.Forms.ComboBox()
+        Me.txtConsignerCity = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.cmbConsignee = New System.Windows.Forms.ComboBox()
+        Me.txtConsigneeCity = New System.Windows.Forms.TextBox()
+        Me.frameOf = New System.Windows.Forms.GroupBox()
+        Me.optBill = New System.Windows.Forms.RadioButton()
+        Me.optTaxable = New System.Windows.Forms.RadioButton()
+        Me.optBasic = New System.Windows.Forms.RadioButton()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.txtTaxableAmount = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtCGST = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtSGST = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtIGST = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtBillAmount = New System.Windows.Forms.TextBox()
+        Me.lblSGST = New System.Windows.Forms.Label()
+        Me.lblCGST = New System.Windows.Forms.Label()
+        Me.lblIGST = New System.Windows.Forms.Label()
+        CType(Me.grdTax, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Grid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StripPanel.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.frameOf.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'grdTax
+        '
+        Me.grdTax.AllowUserToAddRows = False
+        Me.grdTax.AllowUserToDeleteRows = False
+        Me.grdTax.AllowUserToResizeRows = False
+        Me.grdTax.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.grdTax.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.grdTax.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grdTax.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.grdTax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grdTax.DefaultCellStyle = DataGridViewCellStyle10
+        Me.grdTax.Location = New System.Drawing.Point(473, 310)
+        Me.grdTax.Name = "grdTax"
+        Me.grdTax.RowHeadersVisible = False
+        Me.grdTax.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
+        Me.grdTax.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
+        Me.grdTax.Size = New System.Drawing.Size(273, 196)
+        Me.grdTax.TabIndex = 286
+        '
+        'lblCaption
+        '
+        Me.lblCaption.AutoSize = True
+        Me.lblCaption.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.lblCaption.ForeColor = System.Drawing.Color.White
+        Me.lblCaption.Location = New System.Drawing.Point(12, 9)
+        Me.lblCaption.Name = "lblCaption"
+        Me.lblCaption.Size = New System.Drawing.Size(77, 22)
+        Me.lblCaption.TabIndex = 0
+        Me.lblCaption.Text = "Invoice"
+        '
+        'lblHeaderID
+        '
+        Me.lblHeaderID.BackColor = System.Drawing.Color.White
+        Me.lblHeaderID.Location = New System.Drawing.Point(836, 55)
+        Me.lblHeaderID.Name = "lblHeaderID"
+        Me.lblHeaderID.Size = New System.Drawing.Size(20, 19)
+        Me.lblHeaderID.TabIndex = 287
+        Me.lblHeaderID.Visible = False
+        '
+        'txtTotalPackage
+        '
+        Me.txtTotalPackage.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtTotalPackage.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotalPackage.Location = New System.Drawing.Point(299, 277)
+        Me.txtTotalPackage.Name = "txtTotalPackage"
+        Me.txtTotalPackage.Size = New System.Drawing.Size(64, 22)
+        Me.txtTotalPackage.TabIndex = 280
+        '
+        'txtTotalAmount
+        '
+        Me.txtTotalAmount.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtTotalAmount.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotalAmount.Location = New System.Drawing.Point(621, 277)
+        Me.txtTotalAmount.Name = "txtTotalAmount"
+        Me.txtTotalAmount.Size = New System.Drawing.Size(122, 22)
+        Me.txtTotalAmount.TabIndex = 278
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(463, 134)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(35, 18)
+        Me.Label16.TabIndex = 283
+        Me.Label16.Text = "Rate"
+        '
+        'txtRate
+        '
+        Me.txtRate.BackColor = System.Drawing.Color.White
+        Me.txtRate.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRate.Location = New System.Drawing.Point(466, 155)
+        Me.txtRate.Name = "txtRate"
+        Me.txtRate.Size = New System.Drawing.Size(81, 22)
+        Me.txtRate.TabIndex = 252
+        '
+        'lblHR2
+        '
+        Me.lblHR2.BackColor = System.Drawing.Color.DimGray
+        Me.lblHR2.Location = New System.Drawing.Point(29, 306)
+        Me.lblHR2.Name = "lblHR2"
+        Me.lblHR2.Size = New System.Drawing.Size(900, 1)
+        Me.lblHR2.TabIndex = 282
+        '
+        'Grid
+        '
+        Me.Grid.AllowUserToAddRows = False
+        Me.Grid.AllowUserToDeleteRows = False
+        Me.Grid.AllowUserToResizeRows = False
+        Me.Grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.Grid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Grid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Grid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.ProductName, Me.Packages, Me.Weight, Me.Rate, Me.Amount})
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Grid.DefaultCellStyle = DataGridViewCellStyle12
+        Me.Grid.Location = New System.Drawing.Point(28, 183)
+        Me.Grid.Name = "Grid"
+        Me.Grid.ReadOnly = True
+        Me.Grid.RowHeadersVisible = False
+        Me.Grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
+        Me.Grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.Grid.Size = New System.Drawing.Size(718, 88)
+        Me.Grid.TabIndex = 276
+        '
+        'ID
+        '
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        Me.ID.Visible = False
+        '
+        'ProductName
+        '
+        Me.ProductName.FillWeight = 38.7665!
+        Me.ProductName.HeaderText = "Product Name"
+        Me.ProductName.Name = "ProductName"
+        Me.ProductName.ReadOnly = True
+        '
+        'Packages
+        '
+        Me.Packages.FillWeight = 15.76649!
+        Me.Packages.HeaderText = "Packages"
+        Me.Packages.Name = "Packages"
+        Me.Packages.ReadOnly = True
+        '
+        'Weight
+        '
+        Me.Weight.FillWeight = 14.76649!
+        Me.Weight.HeaderText = "Weight"
+        Me.Weight.Name = "Weight"
+        Me.Weight.ReadOnly = True
+        '
+        'Rate
+        '
+        Me.Rate.FillWeight = 17.76649!
+        Me.Rate.HeaderText = "Rate"
+        Me.Rate.Name = "Rate"
+        Me.Rate.ReadOnly = True
+        '
+        'Amount
+        '
+        Me.Amount.FillWeight = 17.76649!
+        Me.Amount.HeaderText = "Amount"
+        Me.Amount.Name = "Amount"
+        Me.Amount.ReadOnly = True
+        '
+        'btnDel
+        '
+        Me.btnDel.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnDel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDel.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDel.ForeColor = System.Drawing.Color.White
+        Me.btnDel.Location = New System.Drawing.Point(701, 147)
+        Me.btnDel.Name = "btnDel"
+        Me.btnDel.Size = New System.Drawing.Size(40, 30)
+        Me.btnDel.TabIndex = 254
+        Me.btnDel.Text = "-"
+        Me.btnDel.UseVisualStyleBackColor = False
+        '
+        'btnAdd
+        '
+        Me.btnAdd.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdd.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.ForeColor = System.Drawing.Color.White
+        Me.btnAdd.Location = New System.Drawing.Point(655, 147)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(40, 30)
+        Me.btnAdd.TabIndex = 253
+        Me.btnAdd.Text = "+"
+        Me.btnAdd.UseVisualStyleBackColor = False
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Label17.Location = New System.Drawing.Point(550, 132)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(53, 18)
+        Me.Label17.TabIndex = 275
+        Me.Label17.Text = "Amount"
+        '
+        'txtAmount
+        '
+        Me.txtAmount.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtAmount.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAmount.Location = New System.Drawing.Point(553, 155)
+        Me.txtAmount.Name = "txtAmount"
+        Me.txtAmount.Size = New System.Drawing.Size(92, 22)
+        Me.txtAmount.TabIndex = 274
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Label15.Location = New System.Drawing.Point(284, 134)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(62, 18)
+        Me.Label15.TabIndex = 273
+        Me.Label15.Text = "Packages"
+        '
+        'txtPackage
+        '
+        Me.txtPackage.BackColor = System.Drawing.Color.White
+        Me.txtPackage.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPackage.Location = New System.Drawing.Point(287, 155)
+        Me.txtPackage.Name = "txtPackage"
+        Me.txtPackage.Size = New System.Drawing.Size(65, 22)
+        Me.txtPackage.TabIndex = 251
+        '
+        'cmbProduct
+        '
+        Me.cmbProduct.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.cmbProduct.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbProduct.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbProduct.FormattingEnabled = True
+        Me.cmbProduct.Location = New System.Drawing.Point(28, 155)
+        Me.cmbProduct.Name = "cmbProduct"
+        Me.cmbProduct.Size = New System.Drawing.Size(241, 24)
+        Me.cmbProduct.TabIndex = 250
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(33, 101)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(35, 18)
+        Me.Label11.TabIndex = 270
+        Me.Label11.Text = "Date"
+        '
+        'txtDate
+        '
+        Me.txtDate.CustomFormat = "dd/MM/yyyy"
+        Me.txtDate.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.txtDate.Location = New System.Drawing.Point(74, 99)
+        Me.txtDate.MinDate = New Date(2014, 1, 1, 0, 0, 0, 0)
+        Me.txtDate.Name = "txtDate"
+        Me.txtDate.Size = New System.Drawing.Size(107, 22)
+        Me.txtDate.TabIndex = 248
+        Me.txtDate.Value = New Date(2014, 4, 26, 0, 0, 0, 0)
+        '
+        'txtInvoiceNo
+        '
+        Me.txtInvoiceNo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtInvoiceNo.Location = New System.Drawing.Point(74, 71)
+        Me.txtInvoiceNo.Name = "txtInvoiceNo"
+        Me.txtInvoiceNo.ReadOnly = True
+        Me.txtInvoiceNo.Size = New System.Drawing.Size(103, 22)
+        Me.txtInvoiceNo.TabIndex = 247
+        '
+        'lblID
+        '
+        Me.lblID.BackColor = System.Drawing.Color.White
+        Me.lblID.Location = New System.Drawing.Point(862, 53)
+        Me.lblID.Name = "lblID"
+        Me.lblID.Size = New System.Drawing.Size(18, 18)
+        Me.lblID.TabIndex = 266
+        Me.lblID.Visible = False
+        '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.Color.White
+        Me.btnCancel.Location = New System.Drawing.Point(665, 512)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(81, 38)
+        Me.btnCancel.TabIndex = 260
+        Me.btnCancel.Text = "&Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(25, 132)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(89, 18)
+        Me.Label8.TabIndex = 268
+        Me.Label8.Text = "Product Name"
+        '
+        'btnSave
+        '
+        Me.btnSave.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSave.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave.ForeColor = System.Drawing.Color.White
+        Me.btnSave.Location = New System.Drawing.Point(578, 512)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(81, 38)
+        Me.btnSave.TabIndex = 259
+        Me.btnSave.Text = "&Save"
+        Me.btnSave.UseVisualStyleBackColor = False
+        '
+        'StripPanel
+        '
+        Me.StripPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.StripPanel.Controls.Add(Me.lblCaption)
+        Me.StripPanel.Location = New System.Drawing.Point(3, 0)
+        Me.StripPanel.Name = "StripPanel"
+        Me.StripPanel.Size = New System.Drawing.Size(858, 43)
+        Me.StripPanel.TabIndex = 263
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(11, 73)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(57, 18)
+        Me.Label2.TabIndex = 264
+        Me.Label2.Text = "C. N. No"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(374, 134)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(50, 18)
+        Me.Label9.TabIndex = 291
+        Me.Label9.Text = "Weight"
+        '
+        'txtWeight
+        '
+        Me.txtWeight.BackColor = System.Drawing.Color.White
+        Me.txtWeight.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtWeight.Location = New System.Drawing.Point(377, 155)
+        Me.txtWeight.Name = "txtWeight"
+        Me.txtWeight.Size = New System.Drawing.Size(81, 22)
+        Me.txtWeight.TabIndex = 290
+        '
+        'txtTotalWeight
+        '
+        Me.txtTotalWeight.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtTotalWeight.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotalWeight.Location = New System.Drawing.Point(394, 277)
+        Me.txtTotalWeight.Name = "txtTotalWeight"
+        Me.txtTotalWeight.Size = New System.Drawing.Size(64, 22)
+        Me.txtTotalWeight.TabIndex = 292
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.cmbConsigner)
+        Me.GroupBox1.Controls.Add(Me.txtConsignerCity)
+        Me.GroupBox1.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.GroupBox1.Location = New System.Drawing.Point(194, 49)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(273, 83)
+        Me.GroupBox1.TabIndex = 293
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Consigner Details"
+        '
+        'cmbConsigner
+        '
+        Me.cmbConsigner.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbConsigner.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbConsigner.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbConsigner.Font = New System.Drawing.Font("Verdana", 9.75!)
+        Me.cmbConsigner.FormattingEnabled = True
+        Me.cmbConsigner.Location = New System.Drawing.Point(12, 21)
+        Me.cmbConsigner.Name = "cmbConsigner"
+        Me.cmbConsigner.Size = New System.Drawing.Size(252, 24)
+        Me.cmbConsigner.TabIndex = 263
+        '
+        'txtConsignerCity
+        '
+        Me.txtConsignerCity.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtConsignerCity.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtConsignerCity.Location = New System.Drawing.Point(12, 52)
+        Me.txtConsignerCity.Name = "txtConsignerCity"
+        Me.txtConsignerCity.ReadOnly = True
+        Me.txtConsignerCity.Size = New System.Drawing.Size(252, 22)
+        Me.txtConsignerCity.TabIndex = 262
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.cmbConsignee)
+        Me.GroupBox2.Controls.Add(Me.txtConsigneeCity)
+        Me.GroupBox2.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.GroupBox2.Location = New System.Drawing.Point(473, 49)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(273, 83)
+        Me.GroupBox2.TabIndex = 294
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Consignee Details"
+        '
+        'cmbConsignee
+        '
+        Me.cmbConsignee.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.cmbConsignee.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbConsignee.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbConsignee.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbConsignee.FormattingEnabled = True
+        Me.cmbConsignee.Location = New System.Drawing.Point(12, 22)
+        Me.cmbConsignee.Name = "cmbConsignee"
+        Me.cmbConsignee.Size = New System.Drawing.Size(252, 24)
+        Me.cmbConsignee.TabIndex = 249
+        '
+        'txtConsigneeCity
+        '
+        Me.txtConsigneeCity.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtConsigneeCity.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtConsigneeCity.Location = New System.Drawing.Point(12, 52)
+        Me.txtConsigneeCity.Name = "txtConsigneeCity"
+        Me.txtConsigneeCity.ReadOnly = True
+        Me.txtConsigneeCity.Size = New System.Drawing.Size(252, 22)
+        Me.txtConsigneeCity.TabIndex = 262
+        '
+        'frameOf
+        '
+        Me.frameOf.Controls.Add(Me.optBill)
+        Me.frameOf.Controls.Add(Me.optTaxable)
+        Me.frameOf.Controls.Add(Me.optBasic)
+        Me.frameOf.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.frameOf.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.frameOf.Location = New System.Drawing.Point(32, 310)
+        Me.frameOf.Name = "frameOf"
+        Me.frameOf.Size = New System.Drawing.Size(121, 110)
+        Me.frameOf.TabIndex = 295
+        Me.frameOf.TabStop = False
+        Me.frameOf.Text = "Booking Type"
+        '
+        'optBill
+        '
+        Me.optBill.AutoSize = True
+        Me.optBill.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.optBill.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.optBill.Location = New System.Drawing.Point(6, 71)
+        Me.optBill.Name = "optBill"
+        Me.optBill.Size = New System.Drawing.Size(65, 22)
+        Me.optBill.TabIndex = 55
+        Me.optBill.Text = "TBB At"
+        Me.optBill.UseVisualStyleBackColor = True
+        '
+        'optTaxable
+        '
+        Me.optTaxable.AutoSize = True
+        Me.optTaxable.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.optTaxable.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.optTaxable.Location = New System.Drawing.Point(6, 45)
+        Me.optTaxable.Name = "optTaxable"
+        Me.optTaxable.Size = New System.Drawing.Size(51, 22)
+        Me.optTaxable.TabIndex = 54
+        Me.optTaxable.Text = "Paid"
+        Me.optTaxable.UseVisualStyleBackColor = True
+        '
+        'optBasic
+        '
+        Me.optBasic.AutoSize = True
+        Me.optBasic.Checked = True
+        Me.optBasic.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
+        Me.optBasic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(134, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.optBasic.Location = New System.Drawing.Point(6, 19)
+        Me.optBasic.Name = "optBasic"
+        Me.optBasic.Size = New System.Drawing.Size(65, 22)
+        Me.optBasic.TabIndex = 53
+        Me.optBasic.TabStop = True
+        Me.optBasic.Text = "To Pay"
+        Me.optBasic.UseVisualStyleBackColor = True
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.Label18.ForeColor = System.Drawing.Color.Blue
+        Me.Label18.Location = New System.Drawing.Point(177, 322)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(143, 27)
+        Me.Label18.TabIndex = 246
+        Me.Label18.Text = "Total Amount"
+        '
+        'txtTaxableAmount
+        '
+        Me.txtTaxableAmount.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtTaxableAmount.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.txtTaxableAmount.Location = New System.Drawing.Point(326, 319)
+        Me.txtTaxableAmount.Name = "txtTaxableAmount"
+        Me.txtTaxableAmount.ReadOnly = True
+        Me.txtTaxableAmount.Size = New System.Drawing.Size(132, 32)
+        Me.txtTaxableAmount.TabIndex = 245
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.Blue
+        Me.Label1.Location = New System.Drawing.Point(177, 360)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 27)
+        Me.Label1.TabIndex = 297
+        Me.Label1.Text = "CGST"
+        '
+        'txtCGST
+        '
+        Me.txtCGST.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtCGST.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.txtCGST.Location = New System.Drawing.Point(326, 357)
+        Me.txtCGST.Name = "txtCGST"
+        Me.txtCGST.ReadOnly = True
+        Me.txtCGST.Size = New System.Drawing.Size(132, 32)
+        Me.txtCGST.TabIndex = 296
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.Label3.ForeColor = System.Drawing.Color.Blue
+        Me.Label3.Location = New System.Drawing.Point(177, 398)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(61, 27)
+        Me.Label3.TabIndex = 299
+        Me.Label3.Text = "SGST"
+        '
+        'txtSGST
+        '
+        Me.txtSGST.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtSGST.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.txtSGST.Location = New System.Drawing.Point(326, 395)
+        Me.txtSGST.Name = "txtSGST"
+        Me.txtSGST.ReadOnly = True
+        Me.txtSGST.Size = New System.Drawing.Size(132, 32)
+        Me.txtSGST.TabIndex = 298
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.Label4.ForeColor = System.Drawing.Color.Blue
+        Me.Label4.Location = New System.Drawing.Point(177, 436)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(56, 27)
+        Me.Label4.TabIndex = 301
+        Me.Label4.Text = "IGST"
+        '
+        'txtIGST
+        '
+        Me.txtIGST.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtIGST.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.txtIGST.Location = New System.Drawing.Point(326, 433)
+        Me.txtIGST.Name = "txtIGST"
+        Me.txtIGST.ReadOnly = True
+        Me.txtIGST.Size = New System.Drawing.Size(132, 32)
+        Me.txtIGST.TabIndex = 300
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.Label5.ForeColor = System.Drawing.Color.Red
+        Me.Label5.Location = New System.Drawing.Point(177, 477)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(124, 27)
+        Me.Label5.TabIndex = 303
+        Me.Label5.Text = "Bill Amount"
+        '
+        'txtBillAmount
+        '
+        Me.txtBillAmount.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txtBillAmount.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.txtBillAmount.ForeColor = System.Drawing.Color.Red
+        Me.txtBillAmount.Location = New System.Drawing.Point(326, 474)
+        Me.txtBillAmount.Name = "txtBillAmount"
+        Me.txtBillAmount.ReadOnly = True
+        Me.txtBillAmount.Size = New System.Drawing.Size(132, 32)
+        Me.txtBillAmount.TabIndex = 302
+        '
+        'lblSGST
+        '
+        Me.lblSGST.BackColor = System.Drawing.Color.White
+        Me.lblSGST.Location = New System.Drawing.Point(792, 56)
+        Me.lblSGST.Name = "lblSGST"
+        Me.lblSGST.Size = New System.Drawing.Size(16, 18)
+        Me.lblSGST.TabIndex = 318
+        Me.lblSGST.Visible = False
+        '
+        'lblCGST
+        '
+        Me.lblCGST.BackColor = System.Drawing.Color.White
+        Me.lblCGST.Location = New System.Drawing.Point(773, 56)
+        Me.lblCGST.Name = "lblCGST"
+        Me.lblCGST.Size = New System.Drawing.Size(16, 18)
+        Me.lblCGST.TabIndex = 317
+        Me.lblCGST.Visible = False
+        '
+        'lblIGST
+        '
+        Me.lblIGST.BackColor = System.Drawing.Color.White
+        Me.lblIGST.Location = New System.Drawing.Point(814, 56)
+        Me.lblIGST.Name = "lblIGST"
+        Me.lblIGST.Size = New System.Drawing.Size(16, 18)
+        Me.lblIGST.TabIndex = 319
+        Me.lblIGST.Visible = False
+        '
+        'frmInvoice
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightBlue
+        Me.ClientSize = New System.Drawing.Size(936, 618)
+        Me.Controls.Add(Me.lblIGST)
+        Me.Controls.Add(Me.lblSGST)
+        Me.Controls.Add(Me.lblCGST)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtBillAmount)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.txtIGST)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtSGST)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtCGST)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.frameOf)
+        Me.Controls.Add(Me.txtTaxableAmount)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.txtTotalWeight)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.txtWeight)
+        Me.Controls.Add(Me.grdTax)
+        Me.Controls.Add(Me.lblHeaderID)
+        Me.Controls.Add(Me.txtTotalPackage)
+        Me.Controls.Add(Me.txtTotalAmount)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.txtRate)
+        Me.Controls.Add(Me.lblHR2)
+        Me.Controls.Add(Me.Grid)
+        Me.Controls.Add(Me.btnDel)
+        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.txtAmount)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.txtPackage)
+        Me.Controls.Add(Me.cmbProduct)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.txtDate)
+        Me.Controls.Add(Me.txtInvoiceNo)
+        Me.Controls.Add(Me.lblID)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.StripPanel)
+        Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.KeyPreview = True
+        Me.Name = "frmInvoice"
+        Me.Text = "frmInvoice"
+        CType(Me.grdTax, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Grid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StripPanel.ResumeLayout(False)
+        Me.StripPanel.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.frameOf.ResumeLayout(False)
+        Me.frameOf.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents grdTax As System.Windows.Forms.DataGridView
+    Friend WithEvents lblCaption As System.Windows.Forms.Label
+    Friend WithEvents lblHeaderID As System.Windows.Forms.Label
+    Friend WithEvents txtTotalPackage As System.Windows.Forms.TextBox
+    Friend WithEvents txtTotalAmount As System.Windows.Forms.TextBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents txtRate As System.Windows.Forms.TextBox
+    Friend WithEvents lblHR2 As System.Windows.Forms.Label
+    Friend WithEvents Grid As System.Windows.Forms.DataGridView
+    Friend WithEvents btnDel As System.Windows.Forms.Button
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents txtAmount As System.Windows.Forms.TextBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents txtPackage As System.Windows.Forms.TextBox
+    Friend WithEvents cmbProduct As System.Windows.Forms.ComboBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents txtDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents txtInvoiceNo As System.Windows.Forms.TextBox
+    Friend WithEvents lblID As System.Windows.Forms.Label
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents StripPanel As System.Windows.Forms.Panel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents txtWeight As System.Windows.Forms.TextBox
+    Friend WithEvents ID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ProductName As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Packages As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Weight As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Rate As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Amount As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents txtTotalWeight As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents cmbConsignee As System.Windows.Forms.ComboBox
+    Friend WithEvents txtConsigneeCity As System.Windows.Forms.TextBox
+    Friend WithEvents frameOf As System.Windows.Forms.GroupBox
+    Friend WithEvents optBill As System.Windows.Forms.RadioButton
+    Friend WithEvents optTaxable As System.Windows.Forms.RadioButton
+    Friend WithEvents optBasic As System.Windows.Forms.RadioButton
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents txtTaxableAmount As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtCGST As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txtSGST As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents txtIGST As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents txtBillAmount As System.Windows.Forms.TextBox
+    Friend WithEvents lblSGST As System.Windows.Forms.Label
+    Friend WithEvents lblCGST As System.Windows.Forms.Label
+    Friend WithEvents cmbConsigner As System.Windows.Forms.ComboBox
+    Friend WithEvents txtConsignerCity As System.Windows.Forms.TextBox
+    Friend WithEvents lblIGST As System.Windows.Forms.Label
+End Class

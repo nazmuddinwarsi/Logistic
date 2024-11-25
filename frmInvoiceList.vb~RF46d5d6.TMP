@@ -1,0 +1,95 @@
+﻿Imports System
+Imports System.Data
+Imports System.Data.Odbc
+Public Class frmInvoiceList
+    Dim cnn As New DataConn.Conn
+
+    Private Sub frmInvoiceList_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        txtFromDate.Text = DateAdd(DateInterval.Month, -1, Date.Today)
+        txtToDate.Text = Date.Today
+        BindGrid()
+    End Sub
+    Private Sub BindGrid()
+        Dim strSQL, sSQL As String
+        Dim da As New OdbcDataAdapter
+        Dim ds As New DataSet
+        sSQL = ""
+        strSQL = "SELECT I.InvoiceID, I.InvoiceNo, I.InvoiceDate, CR.AccountName AS CRName, CE.AccountName AS CEName, I.BookingType, I.TotalPackage, I.TotalWeight, I.TotalAmount, I.TaxableAmount, I.BillAmount, I.Bilty" _
+        & " FROM dbo.LOG_tblInvoice AS I INNER JOIN dbo.LOG_tblAccount AS CE ON I.ConsigneeID = CE.AccountID INNER JOIN dbo.LOG_tblAccount AS CR ON I.ConsignerID = CR.AccountID INNER JOIN dbo.LOG_tblInvoiceDetails AS ID ON I.InvoiceID = ID.HeaderID INNER JOIN" _
+        & " dbo.LOG_tblMaster AS M ON ID.ProductID = M.ID" _
+        & " WHERE (I.CompanyID = " & Val(MDI.lblCompanyID.Text) & ") AND (I.InvoiceDate BETWEEN '" & cnn.GetDate(txtFromDate.Text) & "' AND '" & cnn.GetDate(txtToDate.Text) & "')"
+        If txtInvNo.Text <> "" Then
+            strSQL = strSQL & " AND I.InvoiceNo LIKE " & cnn.SQLSearch(txtInvNo.Text)
+        End If
+        If cmbConsigner.Text <> "" Then
+            strSQL = strSQL & " AND I.ConsignerID = " & Val(cmbConsigner.SelectedValue)
+        End If
+        If cmbConsignee.Text <> "" Then
+            strSQL = strSQL & " AND I.ConsigneeID = " & Val(cmbConsignee.SelectedValue)
+        End If
+        If txtName.Text <> "" Then
+            strSQL = strSQL & " AND M.fldName LIKE " & cnn.SQLSearch(txtName.Text)
+        End If
+        strSQL = strSQL & " GROUP BY I.InvoiceID, I.InvoiceNo, I.InvoiceDate, CR.AccountName, CE.AccountName, I.BookingType, I.TotalPackage, I.TotalWeight, I.TotalAmount, I.TaxableAmount, I.BillAmount, I.Bilty"
+        '--------------------
+        If cnn.cnn.State = 1 Then
+            cnn.cnn.Close()
+        End If
+        cnn.cnn.Open()
+        '--------------------
+        da = New OdbcDataAdapter(strSQL, cnn.cnn)
+        ds = New DataSet()
+        da.Fill(ds)
+        Grid.DataSource = ds.Tables(0)
+        Grid.Columns(0).HeaderText = "ID"
+        Grid.Columns(0).Visible = False
+        Grid.Columns(1).HeaderText = "Invoice No"
+        Grid.Columns(2).HeaderText = "Invoice Date"
+        Grid.Columns(3).HeaderText = "Consigner Name"
+        Grid.Columns(4).HeaderText = "Consignee Name"
+        Grid.Columns(5).HeaderText = "Booking Type"
+        Grid.Columns(6).HeaderText = "Total Package"
+        Grid.Columns(7).HeaderText = "Total Weight"
+        Grid.Columns(8).HeaderText = "Total Amt"
+        Grid.Columns(9).HeaderText = "Taxable Amt"
+        Grid.Columns(10).HeaderText = "Bill Amount"
+        Grid.Columns(11).HeaderText = "Bilty"
+        '=========================
+        Grid2.DataSource = Nothing
+    End Sub
+    Private Sub frmInvoiceList_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = 27 Then
+            Me.Close()
+        ElseIf e.KeyCode = 13 Then
+            SendKeys.Send(vbTab)
+        End If
+    End Sub
+    Private Sub frmInvoiceList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.SetBounds(0, 0, MDI.Width, MDI.Height)
+        Me.MdiParent = MDI
+        '==============================
+        ToolStrip1.Cursor = Cursors.Hand
+        btnAdd.Image = MDI.ImageList1.Images(0)
+        btnEdit.Image = MDI.ImageList1.Images(1)
+        btnDelete.Image = MDI.ImageList1.Images(2)
+        btnSearch.Image = MDI.ImageList1.Images(3)
+        btnPrint.Image = MDI.ImageList1.Images(4)
+        btnInvoice.Image = MDI.ImageList1.Images(4)
+        btnExit.Image = MDI.ImageList1.Images(5)
+        '===========================================
+        frameSearch.Visible = False
+
+        ''--------------------------- CONSIGNER
+        cmbConsigner.DisplayMember = "AccountName"
+        cmbConsigner.ValueMember = "AccountID"
+        cmbConsigner.DataSource = cnn.BindMaster(0)
+        cmbConsigner.SelectedIndex = -1
+        '--------------------------- CONSIGNEE
+        cmbConsignee.DisplayMember = "AccountName"
+        cmbConsignee.ValueMember = "AccountID"
+        cmbConsignee.DataSource = cnn.BindMaster(1)
+        cmbConsignee.SelectedIndex = -1
+
+    End Sub
+End Class
